@@ -2,16 +2,13 @@ image:
   repository: ghcr.io/saraassar/version-api
   # This tag is deliberately a placeholder. CI's bridge step is the ONLY
   # thing that ever changes it — that single line is what ArgoCD watches.
-  tag: "unknown"
+  tag: "ebc156f"
   pullPolicy: IfNotPresent
-
 replicaCount: 1
-
 service:
   type: ClusterIP
   port: 80
   targetPort: 8000
-
 # Leave empty for now. If the GHCR package stays private, this will need
 # a pull-secret reference before the cluster can actually pull the image —
 # we'll deal with that at deploy time, not now.
