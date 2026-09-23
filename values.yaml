@@ -13,4 +13,4 @@ service:
 # a pull-secret reference before the cluster can actually pull the image —
 # we'll deal with that at deploy time, not now.
 imagePullSecrets:
-  - name: ghcr-secret
+  - name: ghcr-pull-secret
