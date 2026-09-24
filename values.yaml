@@ -2,7 +2,7 @@ image:
   repository: ghcr.io/saraassar/version-api
   # This tag is deliberately a placeholder. CI's bridge step is the ONLY
   # thing that ever changes it — that single line is what ArgoCD watches.
-  tag: "ebc156f"
+  tag: "30cbe1b"
   pullPolicy: IfNotPresent
 replicaCount: 1
 service:
